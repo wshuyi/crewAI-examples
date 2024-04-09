@@ -32,7 +32,7 @@ class MeetingPreparationAgents():
 		return Agent(
 			role='Meeting Strategy Advisor',
 			goal='Develop talking points, questions, and strategic angles for the meeting',
-			tools=ExaSearchTool.tools(),
+			# tools=ExaSearchTool.tools(),
 			backstory=dedent("""\
 					As a Strategy Advisor, your expertise will guide the development of
 					talking points, insightful questions, and strategic angles
@@ -44,7 +44,7 @@ class MeetingPreparationAgents():
 		return Agent(
 			role='Briefing Coordinator',
 			goal='Compile all gathered information into a concise, informative briefing document',
-			tools=ExaSearchTool.tools(),
+			# tools=ExaSearchTool.tools(),
 			backstory=dedent("""\
 					As the Briefing Coordinator, your role is to consolidate the research,
 					analysis, and strategic insights."""),

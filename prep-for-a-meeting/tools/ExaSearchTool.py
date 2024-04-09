@@ -16,11 +16,11 @@ class ExaSearchTool:
 		return ExaSearchTool._exa().find_similar(url, num_results=3)
 
 	@tool
-	def get_contents(ids: str):
+	def get_contents(ids: list):
 		"""Get the contents of a webpage.
 		The ids must be passed in as a list, a list of ids returned from `search`.
 		"""
-		ids = eval(ids)
+		# ids = eval(ids)
 		contents = str(ExaSearchTool._exa().get_contents(ids))
 		print(contents)
 		contents = contents.split("URL:")
